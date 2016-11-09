@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
    <body>
-      <p>Esto es un pie de pagina</p>
+      <small>Esto es un pie de pagina</small>
    </body>
 </html>

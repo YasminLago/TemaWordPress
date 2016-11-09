@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
    <body>
-      <p>Esto es una cabecera</p>
+      <h1>Esto es una cabecera</h1>
    </body>
 </html>
