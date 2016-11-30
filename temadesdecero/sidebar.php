@@ -1,8 +1,8 @@
 <html>
    <body>
-      <p>Esto es un sidebar</p>
+      <p class="wid">Esto es un sidebar</p>
+      <img src="<?php echo get_template_directory_uri();?>/images/buscar.jpg" class="wid">
+      <?php if ( ! dynamic_sidebar( 'header-widget-zone' ) ) {} ?>
+      
    </body>
 </html>
-<img src="<?php echo get_template_directory_uri();?>/images/buscar.jpg">
-<?php if ( ! dynamic_sidebar( 'header-widget-zone' ) ) {} ?>
-

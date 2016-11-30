@@ -1,5 +1,5 @@
 <html>
-<div class = "wid" id = "sidebar">
+<div id = "sidebar" class = "wid">
 <?php
 //We hook our action on widgets_init
 add_action('widgets_init','jplana_widgets_init');
@@ -9,9 +9,9 @@ function jplana_widgets_init(){
         'name'          => 'Header Widget Zone',
         'id'            => 'header-widget-zone',
         'description'   => '',
-        'before_widget' => '<div class="side-nav header-widget-zone">',
+        'before_widget' => '<div class="wid">',
         'after_widget'  => '</div>',
-        'before_title'  => '<h2 class="widgettitle">',
+        'before_title'  => '<h2 class="wid">',
         'after_title'   => '</h2>' );
     register_sidebar($args);
 }

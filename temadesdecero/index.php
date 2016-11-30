@@ -15,7 +15,7 @@ get_header();
        get_sidebar('ejemplo'); 
        ?> 
    
-      <h2 id="post-<?php the_ID(); ?>">
+      <h2 id="post-<?php the_ID(); ?>"/>
       <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">
       <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
      
@@ -32,7 +32,7 @@ get_header();
       
       <?php
       the_title(); 
-      ?></a></h2>
+      ?></a>
       <small><?php
       the_time('F jS, Y') 
       ?> <!-- by 
