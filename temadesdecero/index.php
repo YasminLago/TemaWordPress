@@ -3,23 +3,46 @@
 <?php
 get_header();
 ?>
-
 <html>
    <head>
       <title>Primer tema de Wordpress</title>
    </head>
+   
    <body>
+      <p>Tema WordPress SXE</p>
+   
+       <?php
+       get_sidebar('ejemplo'); 
+       ?> 
+   
+      <h2 id="post-<?php the_ID(); ?>">
+      <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">
+      <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
+     
       
-   <p>Hola Mundo</p>
+     
+      <?php
+      wp_nav_menu( array( 'menu' => 'Segundo Menú SXE' ) ); 
+      ?>
+      
+      <?php
+      wp_nav_menu( array( 'menu' => 'Menú SXE' ) ); 
+      ?>
+
+      
+      <?php
+      the_title(); 
+      ?></a></h2>
+      <small><?php
+      the_time('F jS, Y') 
+      ?> <!-- by 
+      <?php
+      the_author() 
+      ?> --></small>
    
-   <h2 id="post-<?php the_ID(); ?>">
-   <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-   <?php the_title(); ?></a></h2>
-   <small><?php the_time('F jS, Y') ?> <!-- by <?php the_author() ?> --></small>
-   
-   <?php 
-   //phpinfo(); //Muestra la informacion sobre la version de php que se esta usando
-   //Bucle que recorre los post
+      <?php 
+      //phpinfo(); //Muestra la informacion sobre la version de php que se esta usando
+      //Bucle que recorre los post
       if ( have_posts() ) {
       while ( have_posts() ) { 
          the_post(); 
@@ -27,12 +50,9 @@ get_header();
       }
        }
        //echo "listo";
-?>
-     </body>
+      ?>
+   </body>
 </html>
-
-
-
 
 <?php
 get_footer();
