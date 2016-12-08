@@ -15,22 +15,82 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 
+html{
+    position: relative; 
+    min-height: 100%;
+}
+
 body{
-    background-color: #D8D8D8;
-    font-family: fantasy;
- 
+    background-image:url("images/fondoTemaWordpress.jpg");
+    margin: 0 0 65px;
+    color:white;
+}
+
+a{
+    color:white;
+}
+
+*{
+    list-style:none;
+    text-decoration:none; 
+    font-family: monospace;
 }
 
 #cabecera{
-    color: #8A0829;
-    
+    text-align: center;
 }
 
-.wid {
-    background-color: #01A9DB;
-    position: relative;
-    left:65em;
-    border: 1px solid #FFF;
-    padding-bottom: 20px;
+#pie{
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    height: 150px;
+}
 
+#menu1 ul{
+    text-align: justify;
+    font-size: 14px;
+    margin: 0; 
+    padding: 0; 
+	list-style-type: none; 
+	list-style-image: none;
+}
+
+#menu2 ul{
+    text-align: right;
+    font-size: 14px;
+    margin: 0; 
+    padding: 0; 
+	list-style-type: none; 
+	list-style-image: none;
+}
+
+#menu1 li, #menu2 li{
+    display: inline;
+}
+
+#menu1 ul li, #menu2 ul li{
+    text-decoration:none;  
+    margin: 4px;
+	padding: 5px 20px 5px 20px; 
+}
+
+#sidebar{
+    float:right;
+    margin-right: 15em;
+}
+
+#loop{
+    position: absolute;
+	left: 0;
+	right: 200px;
+	top:200px;
+	width: 50%;
+	height: 30%;
+	margin: auto;
+}
+
+#loop a{
+    color:black;
 }
